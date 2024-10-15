@@ -3,3 +3,35 @@
   margin: 0;
   padding: 0;
 }
+
+header {
+  height: 100px;
+  background-color: red;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(0, 0, 0)),
+    url(bg-img.jpeg);
+  background-size: 100%;
+  padding: 100px;
+}
+
+.hero-content {
+  width: 1400px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.hero-content div {
+  width: 50%;
+  height: 300px;
+  background-color: aqua;
+}
+
+.hero-content h1 {
+  -webkit-text-stroke: 1px white;
+  color: transparent;
+  text-transform: uppercase;
+}
