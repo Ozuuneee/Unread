@@ -1,37 +1,186 @@
 * {
-  font-family: "SF display", sans-serif;
   margin: 0;
   padding: 0;
+  font-family: "SF display", sans-serif;
+  cursor: pointer;
 }
-
 header {
+  width: 90vw;
   height: 100px;
-  background-color: red;
-}
-
-.hero {
-  height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(0, 0, 0)),
-    url(bg-img.jpeg);
-  background-size: 100%;
-  padding: 100px;
-}
-
-.hero-content {
-  width: 1400px;
-  margin-right: auto;
+  margin-bottom: 100px;
   margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+.zurag {
+  height: 18px;
+}
+.divider {
+  height: 18px;
+  width: 0px;
+  border: 0.5px solid #ffffff;
+}
+.hero {
+  background: linear-gradient(rgb(0, 0, 0, 0.6), rgb(0, 0, 0)),
+    url("bg-img.jpeg");
+  background-size: 100%;
+  height: 100vh;
+  background-position: center top;
+}
+.hero-content {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   justify-content: space-between;
+  gap: 40px;
 }
 .hero-content div {
   width: 50%;
-  height: 300px;
-  background-color: aqua;
 }
-
+.left {
+  background-image: url("news.jpeg");
+  height: 446.4px;
+  width: 446.4px;
+  border-radius: 20px;
+  background-size: 140%;
+  background-position: center;
+}
+.left:hover {
+  background-size: 150%;
+  transition: all 1s ease;
+}
 .hero-content h1 {
   -webkit-text-stroke: 1px white;
   color: transparent;
+}
+.hero-content h2 {
   text-transform: uppercase;
+  color: #ffffff;
+  height: 43px;
+}
+header i {
+  font-size: 19px;
+}
+i {
+  font-size: 19px;
+}
+.HEADD {
+  display: flex;
+  align-items: center;
+  gap: 365px;
+}
+.headr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: #ffffff;
+  margin-left: 135px;
+}
+.headl {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.headl p {
+  color: #333333;
+  font-size: 14px;
+}
+.headl h4 {
+  color: #ffffff;
+}
+.headr h2 {
+  font-weight: 400;
+}
+.headr p {
+  color: gray;
+  font-size: 12px;
+}
+.search {
+  width: max-content;
+  display: flex;
+  align-items: center;
+}
+.search-input {
+  outline: none;
+  border: none;
+  color: #333333;
+  background: transparent;
+  margin-left: 14px;
+}
+.lbox {
+  height: 40px;
+  width: 142px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.lbox p {
+  font-size: 13px;
+}
+.dot {
+  background-color: #0078f6;
+  border-radius: 50%;
+  height: 5px;
+  width: 5px;
+  animation: blink 2s infinite;
+}
+.icons div {
+  margin: 0 15px;
+}
+
+.fa-bars {
+  color: rgba(255, 255, 255, 0.5);
+  margin-right: 100px;
+}
+.icons i {
+  font-size: 15px;
+  color: #000;
+  transition: 0.6s;
+}
+.icons i:hover {
+  color: #fff;
+}
+.icons a {
+  position: relative;
+  display: flex;
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+.icons {
+  display: flex;
+  position: absolute;
+  top: 40px;
+  right: 100px;
+  margin: 0;
+  padding: 0;
+}
+.icons div:nth-child(1) a:hover {
+  background-color: #3b5999;
+}
+.icons div:nth-child(2) a:hover {
+  background-color: #e4405f;
+}
+.icons div:nth-child(3) a:hover {
+  background-color: #55acee;
+}
+.icons div:nth-child(4) a:hover {
+  background-color: #0077b5;
+}
+.right h1 {
+  font-size: 36px;
+}
+.right h2 {
+  font-size: 36px;
 }
