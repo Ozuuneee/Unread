@@ -224,6 +224,10 @@ i {
 .ner {
   color: rgb(255, 255, 255, 0.6);
 }
+
+.ner:hover {
+  color: #ffffff;
+}
 .onsar {
   color: #ffffff;
 }
@@ -248,38 +252,80 @@ i {
   border-radius: 25px;
   background-color: rgb(255, 255, 255, 0.6);
 }
+.scale {
+  transition: all 0.5s ease;
+}
+.scale:hover {
+  scale: 1.1;
+}
+
 .first {
   width: 244px;
   height: 360px;
-  background-image: url(zaluu.jpeg);
-  border-radius: 9px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.1) 40%,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url(zaluu.jpeg);
   background-position: center;
+  border-radius: 9px;
 }
 .second {
   width: 244px;
-  min-height: 360px;
-  background-image: url(second.jpeg);
+  height: 360px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.1) 40%,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url(second.jpeg);
   background-position: center;
   border-radius: 9px;
 }
 .third {
   width: 244px;
   height: 360px;
-  background-image: url(third.jpeg);
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.1) 40%,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url(third.jpeg);
   background-position: center;
   border-radius: 9px;
 }
 .fourth {
   width: 244px;
   height: 360px;
-  background-image: url(forth.jpeg);
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.1) 40%,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url(forth.jpeg);
   background-position: center;
   border-radius: 9px;
 }
 .fifth {
   width: 244px;
   height: 360px;
-  background-image: url(fifth.jpeg);
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.1) 40%,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url(fifth.jpeg);
   background-position: center;
   border-radius: 9px;
 }
@@ -287,7 +333,14 @@ i {
 .sixth {
   width: 244px;
   height: 360px;
-  background-image: url(sixth.jpeg);
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.1) 40%,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url(sixth.jpeg);
   background-position: center;
   border-radius: 9px;
 }
@@ -295,7 +348,14 @@ i {
 .seventh {
   width: 244px;
   height: 360px;
-  background-image: url(seventh.jpeg);
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.1) 40%,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url(seventh.jpeg);
   background-position: center;
   border-radius: 9px;
 }
@@ -443,9 +503,11 @@ i {
   gap: 8px;
   flex-direction: row-reverse;
 }
-.ners .ner {
+
+.ners .ner1 p {
   color: #000000;
 }
+
 .ners .onsar {
   color: #888888;
 }
@@ -487,7 +549,7 @@ i {
   width: 50vw;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
+  margin-top: 200px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
