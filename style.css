@@ -72,7 +72,7 @@ i {
 .HEADD {
   display: flex;
   align-items: center;
-  gap: 365px;
+  gap: 250px;
 }
 .headr {
   display: flex;
