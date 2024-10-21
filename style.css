@@ -516,11 +516,14 @@ i {
   height: 183px;
   margin-top: 10px;
   background-color: #ffffff;
-  border-radius: 0 27px 27px 27px;
+  border-top-right-radius: 27px;
+  border-bottom-left-radius: 27px;
+  border-bottom-right-radius: 27px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 120px;
+  transition: all 0.5s ease;
 }
 
 .article {
@@ -529,19 +532,39 @@ i {
   flex-direction: column;
   align-items: flex-start;
   margin-top: 30px;
+  margin-bottom: 100px;
+}
+.article:hover .bigcard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: translate(0, -10px);
+}
+.article-right:hover .bigcard2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: translate(0, -10px);
+}
+.article-right:hover .pros2 {
+  transform: translate(0, -10px);
+}
+.article:hover .pros1 {
+  transform: translate(0, -10px);
 }
 .article-right {
   align-self: flex-end;
   align-items: flex-end;
+  margin-bottom: 100px;
 }
 .bigcard2 {
   width: 739px;
   height: 183px;
   margin-top: 10px;
   background-color: #ffffff;
-  border-radius: 27px 0 27px 27px;
+  border-top-right-radius: 27px;
+  border-bottom-left-radius: 27px;
+  border-bottom-right-radius: 27px;
   display: flex;
   justify-content: center;
+  transition: all 0.5s ease;
+
   align-items: center;
   gap: 120px;
 }
@@ -556,14 +579,14 @@ i {
 }
 .le {
   display: flex;
-  width: 60%;
+  width: 50%;
   height: 40%;
   flex-direction: column;
 }
 .etseg {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
 }
 .tusdaa {
   display: flex;
@@ -573,7 +596,6 @@ i {
 .etseg p {
   color: #0078f6;
   font-size: 12px;
-  font-weight: 700;
 }
 .etseg h5 {
   font-size: 21px;
